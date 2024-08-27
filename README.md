@@ -1,7 +1,4 @@
-<h1> Sistema de Registro </h1>
+<h1> Proyecto de Encriptador/Desencriptador para ONE </h1>
 
-- Estado del proyecto: En construcción.
+- Estado del proyecto: Finalizado
 
-- Para ejecutar el sistema, debes poner:
-
-```npm install wo```
