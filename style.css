@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color_uno);
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --color_uno: #ffffff;
+    --color_dos: #add8e6;
+    --color_tres: #0a3871;
+
+    --color_texto_uno: #495057;
+    --colo_texto_dos: #343A40;
+    --font_base: "Open Sans", sans-serif;
+}
+
+img {
+    pointer-events: none;
+}
+
+
+/* Edición CSS de la cabecera de la página */
+
+#header {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.8em 0 1.8em;
+    position: sticky;
+    margin-bottom: 10px;
+
+    background-color: var(--color_uno);
+}
+
+#header_icon_alura {
+    width: 3em;
+    height: 3em;
+
+    /* background-color: red; */
+}
+
+#header_cambio_de_estilo {
+    width: 13em;
+    height: 4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* background-color: red; */
+}
+
+.boton_estilo_uno, .boton_estilo_dos, .boton_estilo_tres {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+.boton_estilo_uno {
+    background-color: white;
+}
+.boton_estilo_dos {
+    background-color: white;
+}
+.boton_estilo_tres {
+    background-color: White;
+}
+
+/* Hovers del header */
+
+.boton_estilo_uno:hover {
+    background-color: crimson;
+    cursor: pointer
+}
+.boton_estilo_dos:hover {
+    background-color: blueviolet;
+    cursor: pointer
+}
+.boton_estilo_tres:hover {
+    background-color: orange;
+    cursor: pointer
+}
+
+/* Edición CSS de la parte principal de la página, a la herramienta encriptadora en cuestión */
+
+#main_general {
+    width: 100%;
+    height: 34em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#area_de_entrada_de_texto {
+    width: 54%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.seccion_entrada_de_texto {
+    width: auto;
+    height: 30em;
+    border-style: none;
+    border-width: 0;
+    outline: none;
+    font-size: 15px;
+    font-family: var(--font_base);
+
+    background-color: var(--color_uno);
+}
+
+.seccion_aviso {
+    width: auto;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 26px;
+    margin-bottom: 10px;
+}
+
+.main_icon_alert {
+    width: 20px;
+    height: 20px;
+    
+}
+.texto_aviso {
+    color: var(--colo_texto_dos);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.seccion_de_botones {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.boton_encriptar {
+    width: 48%;
+    height: 4em;
+    color: var(--color_uno);
+    font-size: 1em;
+    font-weight: 400;
+    background-color: var(--color_tres);
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: var(--color_tres);
+    border-style: solid;
+}
+
+.boton_desencriptar {
+    width: 48%;
+    height: 4em;
+    color: var(--color_texto_uno);
+    font-size: 1em;
+    font-weight: 400;
+    background-color: var(--color_uno);
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: var(--color_tres);
+    border-style: solid;
+}
+
+/* Hovers de los botones */
+
+.boton_encriptar:hover {
+    background-color: var(--color_uno);
+    color: var(--color_tres);
+    cursor: pointer;
+}
+
+
+.boton_desencriptar:hover {
+    background-color: var(--color_uno);
+    cursor: pointer;
+}
+
+
+/* Diseño del lado derecho */
+
+#area_de_salida_de_texto {
+    width: 32%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: var(--color_tres) solid 2px;
+    border-radius: 8px;
+}
+
+/*.seccion_img_aviso {
+    width: auto;
+    height: auto;
+    background-color: rebeccapurple;
+}
+.texto_aviso2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    background-color: aquamarine;
+}*/
+
+/*.texto_aviso3 {
+    font-size: 18px;
+    text-align: center;
+    background-color: royalblue;
+} */
+
+.texto_aviso3 {
+    width: auto;
+    height: 70%;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* FINAL */
+#boton_copiar {
+    width: 78%;
+    height: 3em;
+    color: var(--color_texto_uno);
+    font-size: 1em;
+    font-weight: 400;
+    background-color: var(--color_uno);
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: var(--color_tres);
+    border-style: solid;
+}
+
+#boton_copiar:hover {
+    background-color: var(--color_uno);
+    color: var(--color_tres);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (width <= 768px) {
+    #main_general {
+        width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: space-evenly;
+        
+
+        padding: 1em;
+        margin-bottom: 20px;
+    }
+    
+    #area_de_entrada_de_texto {
+        width: auto;
+        height: 520px;
+        margin-bottom: 100px;
+    }
+    
+    #area_de_salida_de_texto {
+        width: auto;
+        height: 520px;
+    
+    }
+}
+
+@media (width <= 375px) {
+    #main_general {
+        width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        padding: 1em;
+    }
+    
+    #area_de_entrada_de_texto {
+        width: auto;
+        height: 520px;
+    
+    }
+    
+    #area_de_salida_de_texto {
+        width: auto;
+        height: 520px;
+    
+    }
+    .seccion_de_botones {
+        width: auto;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .boton_encriptar {
+        width: 100%;
+        height: 4em;
+        color: var(--color_uno);
+        font-size: 1em;
+        font-weight: 400;
+        background-color: var(--color_tres);
+        border-radius: 6px;
+        border-width: 2px;
+        border-color: var(--color_tres);
+        border-style: solid;
+        margin-bottom: 10px;
+    }
+    
+    .boton_desencriptar {
+        width: 100%;
+        height: 4em;
+        color: var(--color_texto_uno);
+        font-size: 1em;
+        font-weight: 400;
+        background-color: var(--color_uno);
+        border-radius: 6px;
+        border-width: 2px;
+        border-color: var(--color_tres);
+        border-style: solid;
+    }
+}
+
+
+
+
+
+
+
